@@ -1,0 +1,15 @@
+以下配置操作前，确保要有idea，jdk1.8, maven3.6.1, mysql ,navicat ,node14 ，相关环境！！！
+
+
+第一步：把酒店管理系统\源码\hotely5d文件夹拖进idea里面
+第二步：配置maven,把maven导入
+第三步：选择jdk1.8的Java环境
+第四步：navicat连接mysql,把数据库文件导入（酒店管理系统源码\hotely5d\src\main\resources\application.yml里面修改你的数据库库密码）
+第五步：在酒店管理系统\源码\hotely5d\src\main\resources\application.yml文件里面修改图片上传加载的位置，C:\Users\Administrator\Desktop\酒店管理系统\源码\images\，改为你的
+第六步：Application类中启动后端
+第七步：在idea里面通过dev启动前端，
+              或者在酒店管理系统\源码\hotely5d-web这个目录下面输入cmd,命令行里面输入npm run dev启动前端，
+              或者把hotely5d-web文件夹拖到VScode里面，在终端里面输入npm run dev启动前端，
+第八步：浏览器里面输入运行出来的网址就会登录页面，系统管理员账号密码：admin  123456
+                                                                                          用户1账号密码：    fxr  123456
+                                                                                          用户2账号密码：   zxf   123456
