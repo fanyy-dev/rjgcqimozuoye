@@ -1,0 +1,33 @@
+# 后端编译产物
+target/
+*.iml
+.idea/
+
+# 前端依赖和编译产物
+node_modules/
+dist/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志文件
+logs/
+*.log
+
+# 临时文件
+*.tmp
+*.temp
+
+# 环境变量文件
+.env
+.env.local
+.env.*.local
+
+# 上传文件目录
+images/
+
+# 视频和文档文件
+*.mp4
+*.docx
+*.pdf
