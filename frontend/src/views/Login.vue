@@ -70,7 +70,7 @@ export default {
     width: 100vw;
     height: 100vh;
     //background-color: #282c35;
-     background: url(@/assets/酒店.jpg);
+     background: url(@/assets/生成图片.png);
     background-size: 100%;
     display: flex;
 

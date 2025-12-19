@@ -114,8 +114,8 @@ export default {
 .container {
     width: 100vw;
     height: 100vh;
-    background: #409eff;
-    background-size: cover;
+    background: url(@/assets/生成图片.png);
+    background-size: 100%;
     display: flex;
 
     .login-box {
@@ -123,7 +123,7 @@ export default {
         border-radius: 10px;
         min-width: 400px;
         min-height: 200px;
-        background-color: aliceblue;
+        background-color: rgba(250,250,250,0.8);
         margin: auto;
         padding-right: 40px;
 
