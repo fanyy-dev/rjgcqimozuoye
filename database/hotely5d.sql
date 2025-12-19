@@ -14,7 +14,7 @@
  Date: 02/08/2025 12:42:59
 */
 
-SET NAMES utf8mb4;
+SET NAMES utf8mb4 COLLATE utf8mb4_0900_ai_ci;
 SET FOREIGN_KEY_CHECKS = 0;
 
 -- ----------------------------

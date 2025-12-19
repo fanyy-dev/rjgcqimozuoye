@@ -1,13 +1,16 @@
 package com.hotely5d.config;
 
-
-
 import com.hotely5d.interceptor.JWTInterceptor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.converter.HttpMessageConverter;
+import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+import java.nio.charset.StandardCharsets;
+import java.util.List;
 
 @Configuration
 public class MyWebAppConfigurer implements WebMvcConfigurer {
@@ -34,6 +37,13 @@ public class MyWebAppConfigurer implements WebMvcConfigurer {
                         ,"/room/**"
                         ,"/category/**"
                         ,"/file/**");
+    }
+
+    @Override
+    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
+        //设置默认的字符串转换器，确保响应使用UTF-8字符集
+        StringHttpMessageConverter stringConverter = new StringHttpMessageConverter(StandardCharsets.UTF_8);
+        converters.add(0, stringConverter);
     }
 
 }
